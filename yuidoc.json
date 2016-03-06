@@ -1,0 +1,4 @@
+{
+  "themedir": "node_modules/yuidoc-dropkick-theme",
+  "helpers": ["node_modules/yuidoc-dropkick-theme/helpers/helpers.js"]
+}

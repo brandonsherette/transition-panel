@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" contect="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, height=device-height target-densitydpi=device-dpi">
+    <title>Transition Panel Demo</title>
+    
+    <!-- 3rd Party Styles -->
+    <link rel="stylesheet" type="text/css" href="app/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="app/vendor/brandon-sherette/plugins/transition-panel/styles/default.css">
+    
+    <!-- App Styles -->
+    <link rel="stylesheet" type="text/css" href="styles/app.css">
+  </head>
+  <body>
+    <div class="height-retainer">
+      <header class="header">
+        <div class="container">
+          <h1>Transition Panel</h1>
+        </div>
+      </header><!-- /.header -->
+
+      <div id="view-content" class="container">
+        <div class="transition-panel">
+          <nav class="panel-nav">
+            <ul class="row text-center plain-list">
+              <li class="col-md-4"><button class="btn btn-primary panel-button full" data-panel-target="branding">Branding</button></li>
+              <li class="col-md-4"><button class="btn btn-primary panel-button full" data-panel-target="webdesign">Web Design</button></li>
+              <li class="col-md-4"><button class="btn btn-primary panel-button full" data-panel-target="marketing">Marketing</button></li>
+            </ul>
+          </nav>
+          
+          <div class="panel-view"></div>
+          
+          <div class="panel-templates">
+            <div class="panel-template" id="branding">
+              <ul class="row text-center plain-list">
+                <li class="col-md-3 text-center"><img src="images/icons/icon.png" class="icon"><span class="icon-label">Logos</span></li>
+                <li class="col-md-3 text-center"><img src="images/icons/icon.png" class="icon"><span class="icon-label">Print</span></li>
+                <li class="col-md-3 text-center"><img src="images/icons/icon.png" class="icon"><span class="icon-label">Packaging</span></li>
+                <li class="col-md-3 text-center"><img src="images/icons/icon.png" class="icon"><span class="icon-label">Merchandise</span></li>
+              </ul>
+            </div><!-- /.panel-template -->
+            <div class="panel-template" id="webdesign">
+              <ul class="row text-center plain-list">
+                <li class="col-md-3"><img src="images/icons/icon.png" class="icon"><span class="icon-label">Design</span></li>
+                <li class="col-md-3"><img src="images/icons/icon.png" class="icon"><span class="icon-label">Development</span></li>
+                <li class="col-md-3"><img src="images/icons/icon.png" class="icon"><span class="icon-label">Hosting</span></li>
+                <li class="col-md-3"><img src="images/icons/icon.png" class="icon"><span class="icon-label">UI</span></li>
+              </ul>
+            </div><!-- /.panel-template -->
+            <div class="panel-template" id="marketing">
+              <p class="text-center">
+                Just some random text showing you can have any amount of content to update the transitional panel to.
+              </p>
+            </div><!-- /.panel-template -->
+          </div><!-- /.panel-templates -->
+        </div><!-- /.panel-transition -->
+      </div><!-- /.view-content -->
+    </div><!-- /.height-retainer -->
+
+    <div class="footer container">
+      <div class="text-center copyright">
+        &copy; brandonsherette.com 2016
+      </div>
+    </div><!-- /.footer -->
+    
+    <!-- Scripts -->
+    <script src="app/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="app/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app/vendor/brandon-sherette/plugins/transition-panel/plugin.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>

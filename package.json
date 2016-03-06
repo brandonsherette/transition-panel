@@ -1,0 +1,49 @@
+{
+  "name": "transition-panel-plugin",
+  "title": "Transition Panel Plugin",
+  "description": "Plugin for allowing transitions to panels (any HTML element) on a button press or acted upon via JavaScript.",
+  "version": "1.0.1",
+  "main": "dist/plugin.js",
+  "homepage": "http://brandonsherette.com/blog/transition-panel-plugin",
+  "author": {
+    "name": "Brandon Sherette",
+    "url": "http://brandonsherette.com",
+    "email": "bsherette@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bsherette/transition-panel-plugin.git"
+  },
+  "keywords": [
+    "plugin",
+    "javascript",
+    "transition",
+    "panel",
+    "browser"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^2.2.1"
+  },
+  "devDependencies": {
+    "bower": "~1.7.5",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-watch": "^4.3.5",
+    "gulp-yuidoc": "^0.1.2",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "yuidoc-dropkick-theme": "0.0.8"
+  },
+  "scripts": {
+    "build": "gulp build"
+  },
+  "files": [
+    "LICENSE",
+    "src",
+    "dist"
+  ]
+}

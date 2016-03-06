@@ -1,0 +1,87 @@
+html,
+body{
+  height: 100%;
+  min-height: 100%;
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+h2, 
+.alt-color{
+  color: #3f7a1f;
+}
+.btn-cancel{
+  background-color: #ff9393;
+}
+.alt-background{
+  background-color: #b2c2d4;
+}
+.header,
+.footer{
+  width: 100%;
+  background-color: #286090;
+  color: #ffffff;
+}
+form .invalid,
+form .invalid:focus{
+  border: 1px solid red;
+}
+form .valid,
+form .valid:focus{
+  border: 1px solid green;
+}
+.height-retainer{
+  min-height: 100%;
+  padding-bottom: 75px; /* same height as footer, provides footer will always be at bottom */
+}
+.header{
+  line-height: 75px;
+  margin-bottom: 10px;
+}
+.header h1{
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 75px;
+}
+.heading-group h1,
+.heading-group h2{
+  margin-bottom: 0;
+}
+.heading-group .subheading{
+  margin-top: 0;
+  color: #cdcdcd;
+  font-size: 1em;
+}
+.footer{
+  /* footer is a single line style of footer, so use line-height as the height of the footer */
+  line-height: 75px;
+  /* make margin-top the same height as footer, */
+  /* this pushes the footer to correct positioning at the */ 
+  /* bottom of the page */
+  margin-top: -75px;
+}
+.copyright{
+  font-size: 1em;
+}
+.product-item{
+  border-bottom: 1px dashed #cdcdcd;
+}
+.plain-list{
+  margin: 0;
+}
+.plain-list li{
+  list-style-type: none;
+}
+#view-content{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+img.icon{
+  width: 32px;
+}
+.icon-label{
+  display: block;
+  font-size: 12px;
+}
+.panel-nav{
+  margin-bottom: 100px;
+}
