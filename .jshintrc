@@ -17,5 +17,10 @@
     "strict": true,
     "trailing": true,
     "smarttabs": true,
-    "predef": []
+    "globals": {
+      "window": true,
+      "define": true,
+      "module": true,
+      "self": true
+    }
 }
