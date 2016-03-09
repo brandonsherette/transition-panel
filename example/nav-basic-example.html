@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Base Example</title>
+
+    <link rel="stylesheet" href="../vendor/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Add Core Plugin CSS -->
+    <link rel="stylesheet" href="../dist/styles/default.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Specialties</h1>
+      <div class="transition-panel">
+        <nav class="panel-nav">
+          <button class="btn btn-primary panel-button" data-panel-target="pizza">Pizza</button>
+          <button class="btn btn-primary panel-button" data-panel-target="sandwiches">Sandwiches</button>
+        </nav>
+
+        <div class="panel-view"></div>
+
+        <div class="panel-templates">
+          <div class="panel-template" id="pizza">
+            <h1>Pizza</h1>
+            <p>Our pizza is freshly prepared and cooked in our hand built brick fire oven!
+          </div>
+          <div class="panel-template" id="sandwiches">
+            <h1>Sandwiches</h1>
+            <p>
+              Our sandwiches are made to order and only use the finest ingredients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Need jQuery to work -->
+    <script src="../vendor/jquery/dist/jquery.min.js"></script>
+    <!-- Add Panel Transition Panel Plugin -->
+    <script src="../dist/transition-panel-plugin.js"></script>
+    <!-- Initialize and Start Transition Panel Plugin -->
+    <script>
+      $(document).ready(function(){
+        TransitionPanelPlugin.init().start();
+      });
+    </script>
+  </body>
+</html>

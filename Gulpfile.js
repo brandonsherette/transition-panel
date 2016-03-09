@@ -10,8 +10,8 @@ gulp.task('default', ['watch'], function(){
 });
 
 gulp.task('watch', ['jshint', 'sass'], function(){
-  gulp.watch('src/**/*.js', ['jshint']);
-  gulp.watch('src/**/*.scss', ['sass']);
+  gulp.watch('src/**/*.js', ['build']);
+  gulp.watch('src/**/*.scss', ['build']);
 });
 
 gulp.task('jshint', function(){
@@ -42,5 +42,10 @@ gulp.task('jsdoc', function(){
 
 gulp.task('build', ['jshint', 'sass'], function(){
   gulp.src('src/**/*')
+    .pipe(gulp.dest('dist'));
+  
+  // minify the js code
+  gulp.src('src/**/*.js')
+    .pipe(plugins.uglify())
     .pipe(gulp.dest('dist'));
 });

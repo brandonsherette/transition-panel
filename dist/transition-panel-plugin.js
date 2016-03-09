@@ -48,6 +48,11 @@
 })(function(root, TransitionPanelPlugin, $){
   'use strict';
   
+  // make sure jQuery is available
+  if(!$){
+    console.log('jQuery required for Transition Panel Plugin.');
+  }
+  
   // Define Private Variables
   var $panelButtons = null,
       $panelView = null,
@@ -101,7 +106,7 @@
    * @chainable
    * @since 1.0.0
    */
-  TransitionPanelPlugin.init = function(){
+  TransitionPanelPlugin.init = function(){    
     $plugin = $('.transition-panel');
     $panelButtons = $plugin.find('.panel-button');
     $panelTemplates = $plugin.find('.panel-templates .panel-template');
