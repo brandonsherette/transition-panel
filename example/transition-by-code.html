@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" contect="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, height=device-height target-densitydpi=device-dpi">
+    <title>Transition Panel Demo - Transition By Code</title>
+
+    <!-- 3rd Party Styles -->
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../dist/styles/default.css">
+
+    <!-- App Styles -->
+    <link rel="stylesheet" type="text/css" href="styles/app.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Specialties</h1>
+      <div class="transition-panel">
+        <div class="panel-view"></div>
+
+        <div class="panel-templates">
+          <div class="panel-template" id="pizza">
+            <h1>Pizza</h1>
+            <p>Our pizza is freshly prepared and cooked in our hand built brick fire oven!
+          </div>
+          <div class="panel-template" id="sandwiches">
+            <h1>Sandwiches</h1>
+            <p>
+              Our sandwiches are made to order and only use the finest ingredients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../dist/transition-panel-plugin.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        TransitionPanelPlugin.init().start();
+
+        var curPanelIndex = 0,
+            numOfPanelTemplates = TransitionPanelPlugin.getPanelTemplates().length;
+
+        window.setInterval(function(){
+          var panelContent;
+          
+          curPanelIndex += 1;
+
+          // reset the index back to 0 if past the last panel
+          if(curPanelIndex >= numOfPanelTemplates){
+            curPanelIndex = 0;
+          }
+
+          panelContent = TransitionPanelPlugin.getPanelTemplate(curPanelIndex);
+
+          if(panelContent){
+            TransitionPanelPlugin.transitionPanel(panelContent);
+          }
+        }, 5000);
+      });
+    </script>
+  </body>
+</html>

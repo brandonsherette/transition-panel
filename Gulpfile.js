@@ -45,7 +45,8 @@ gulp.task('build', ['jshint', 'sass'], function(){
     .pipe(gulp.dest('dist'));
   
   // minify the js code
-  gulp.src('src/**/*.js')
+  gulp.src('src/*.js')
+    .pipe(plugins.concat('transition-panel-plugin.min.js'))
     .pipe(plugins.uglify())
     .pipe(gulp.dest('dist'));
 });

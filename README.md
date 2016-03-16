@@ -8,9 +8,9 @@ by going through the example folder for a working demonstration of the plugin in
 # Dependencies
 * jQuery
 
-## Nav Example
+# Nav Example
 
-### Html
+## Html
 
 <div class="container">
   <h1>Specialties</h1>
@@ -38,13 +38,40 @@ by going through the example folder for a working demonstration of the plugin in
     </div>
   </div>
 
-### JavaScript Code
+## JavaScript Code
 TransitionPanelPlugin.init().start();
 
 init() will go through your html code and setup the plugin.
 
 start() will load and display the first template.
 
-### Styles
+## Styles
 The Transition Panel Plugin includes a css file that you should add which will disable 
 the viewing of the templates in your html.
+
+
+# Transition With Code
+## JavaScript
+$(document).ready(function(){
+  TransitionPanelPlugin.init().start();
+
+  var curPanelIndex = 0,
+  numOfPanelTemplates = TransitionPanelPlugin.getPanelTemplates().length;
+
+  window.setInterval(function(){
+    var panelContent;
+          
+    curPanelIndex += 1;
+
+    // reset the index back to 0 if past the last panel
+    if(curPanelIndex >= numOfPanelTemplates){
+      curPanelIndex = 0;
+    }
+
+    panelContent = TransitionPanelPlugin.getPanelTemplate(curPanelIndex);
+
+    if(panelContent){
+      TransitionPanelPlugin.transitionPanel(panelContent);
+    }
+  }, 5000);
+});

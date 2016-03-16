@@ -12,7 +12,7 @@
  * 
  * @class TransitionPanelPlugin
  * @description Plugin for transitioning content into a central view via button presses.
- * @since 1.0.1
+ * @since 1.0.2
  */
 (function(factory){
   'use strict';
@@ -115,6 +115,31 @@
     this.bindEvents();
 
     return this;
+  };
+  
+  /**
+   * Gets the panel templates.
+   * @method getPanelTemplates
+   * @return {jQueryCollection} The collection of panel templates as jQueryElements.
+   * @since 1.0.2 
+   */
+  TransitionPanelPlugin.getPanelTemplates = function(){
+    return $panelTemplates;
+  };
+  
+  /**
+   * Gets the panel template based on the specified index.
+   * @method getPanelTemplate
+   * @param {int} index the index for the template to get.
+   * @return {html} the html for the found panel, returns null if no match found.
+   * @since 1.0.2
+   */
+  TransitionPanelPlugin.getPanelTemplate = function(index){
+    if(index >= $panelTemplates.length || index < 0){
+      return null;
+    }
+    
+    return $panelTemplates.get(index);
   };
 
   /**

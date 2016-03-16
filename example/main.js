@@ -1,7 +1,7 @@
 requirejs.config({
   paths: {
     jquery: '../vendor/jquery/dist/jquery.min',
-    TransitionPanelPlugin: '../dist/transition-panel-plugin'
+    TransitionPanelPlugin: '../dist/transition-panel-plugin.min'
   }
 });
 
