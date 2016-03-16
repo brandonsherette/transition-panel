@@ -1,9 +1,9 @@
 {
-  "name": "transition-panel-plugin",
+  "name": "transition-panel",
   "title": "Transition Panel Plugin",
   "description": "Plugin for allowing transitions to panels (any HTML element) on a button press or acted upon via JavaScript.",
-  "version": "1.0.3",
-  "main": "dist/plugin.js",
+  "version": "1.0.4",
+  "main": "dist/transition-panel.js",
   "homepage": "http://brandonsherette.com/blog/transition-panel-plugin",
   "author": {
     "name": "Brandon Sherette",

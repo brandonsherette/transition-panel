@@ -1,7 +1,11 @@
 {
-  "name": "transition-panel-plugin",
-  "author": "Brandon Sherette",
-  "version": "1.0.3",
+  "name": "transition-panel",
+  "description": "Plugin for allowing transitions to panels (any HTML element) on a button press or acted upon via JavaScript.",
+  "authors": [
+    "Brandon Sherette <bsherette@brandonsherette.com>"
+  ],
+  "version": "1.0.4",
+  "main": "dist/transition-panel.js",
   "license": "MIT",
   "dependencies": {
     "jquery": ">=2.2.0"
@@ -10,6 +14,17 @@
     "bootstrap": "^3.3.6",
     "requirejs": "^2.1.22"
   },
+   "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "plugin",
+    "javascript",
+    "transition",
+    "panel",
+    "browser"
+  ],
   "ignore": [
     "api-docs",
     "example",
@@ -19,6 +34,7 @@
     ".jshintignore",
     ".jshintrc",
     "Gulpfile.js",
-    "package.json"
+    "package.json",
+    ".bowerrc"
   ]
 }

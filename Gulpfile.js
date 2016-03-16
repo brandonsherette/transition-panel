@@ -31,8 +31,8 @@ gulp.task('jsdoc', function(){
     .pipe(plugins.yuidoc({
       "name": "Transition Panel Plugin API",
       "description": "The Transition Panel Plugin API - Transition panels based on button clicks or via JavaScript.",
-      "version": "1.0.1",
-      "url": "http://github.com/bsherette/transition-panel-plugin"
+      "version": "1.0.4",
+      "url": "http://github.com/bsherette/transition-panel"
   }, {
     "themedir": "node_modules/yuidoc-bootstrap-theme",
     "helpers": ["node_modules/yuidoc-bootstrap-theme/helpers/helpers.js"]
@@ -46,7 +46,7 @@ gulp.task('build', ['jshint', 'sass'], function(){
   
   // minify the js code
   gulp.src('src/*.js')
-    .pipe(plugins.concat('transition-panel-plugin.min.js'))
+    .pipe(plugins.concat('transition-panel.min.js'))
     .pipe(plugins.uglify())
     .pipe(gulp.dest('dist'));
 });
