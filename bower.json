@@ -1,5 +1,5 @@
 {
-  "name": "basic-web-page",
+  "name": "transition-panel-plugin",
   "author": "Brandon Sherette",
   "dependencies": {
     "jquery": ">=2.2.0"
