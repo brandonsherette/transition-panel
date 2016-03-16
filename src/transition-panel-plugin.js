@@ -12,7 +12,7 @@
  * 
  * @class TransitionPanelPlugin
  * @description Plugin for transitioning content into a central view via button presses.
- * @since 1.0.2
+ * @since 1.0.3
  */
 (function(factory){
   'use strict';
@@ -72,7 +72,7 @@
    * @type String
    * @since 1.0.1
    */
-  TransitionPanelPlugin.VERSION = '1.0.1';
+  TransitionPanelPlugin.VERSION = '1.0.3';
 
   /**
    * Let the plugin have its own copy of jQuery
