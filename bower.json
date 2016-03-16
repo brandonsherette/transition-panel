@@ -1,11 +1,24 @@
 {
   "name": "transition-panel-plugin",
   "author": "Brandon Sherette",
+  "version": "1.0.2d",
+  "license": "MIT",
   "dependencies": {
     "jquery": ">=2.2.0"
   },
   "devDependencies": {
     "bootstrap": "^3.3.6",
     "requirejs": "^2.1.22"
-  }
+  },
+  "ignore": [
+    "api-docs",
+    "example",
+    "node_modules",
+    "vendor",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "Gulpfile.js",
+    "package.json"
+  ]
 }
