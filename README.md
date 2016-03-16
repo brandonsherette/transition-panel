@@ -12,33 +12,32 @@ by going through the example folder for a working demonstration of the plugin in
 
 ## Html
 ```html
-<pre><code>
 <div class="container">
   <h1>Specialties</h1>
-    <div class="transition-panel">
-      <nav class="panel-nav">
-        <button class="btn btn-primary panel-button" data-panel-target="pizza">Pizza</button>
-        <button class="btn btn-primary panel-button" data-panel-target="sandwiches">Sandwiches</button>
-      </nav>
+  <div class="transition-panel">
+    <nav class="panel-nav">
+      <button class="btn btn-primary panel-button" data-panel-target="pizza">Pizza</button>
+      <button class="btn btn-primary panel-button" data-panel-target="sandwiches">Sandwiches</button>
+    </nav>
 
-      <div class="panel-view"></div>
+    <div class="panel-view"></div>
 
-      <div class="panel-templates">
-        <div class="panel-template" id="pizza">
-          <h1>Pizza</h1>
-          <p>Our pizza is freshly prepared and cooked in our hand built brick fire oven!
-        </div>
+    <div class="panel-templates">
+      <div class="panel-template" id="pizza">
+        <h1>Pizza</h1>
+        <p>Our pizza is freshly prepared and cooked in our hand built brick fire oven!
+      </div>
 
-        <div class="panel-template" id="sandwiches">
-          <h1>Sandwiches</h1>
-          <p>
-            Our sandwiches are made to order and only use the finest ingredients.
-          </p>
-        </div>
+      <div class="panel-template" id="sandwiches">
+        <h1>Sandwiches</h1>
+        <p>
+          Our sandwiches are made to order and only use the finest ingredients.
+        </p>
       </div>
     </div>
   </div>
-</code></pre>
+</div>
+```
 
 ## JavaScript Code
 TransitionPanelPlugin.init().start();
