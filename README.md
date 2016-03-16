@@ -11,7 +11,8 @@ by going through the example folder for a working demonstration of the plugin in
 # Nav Example
 
 ## Html
-
+```html
+<pre><code>
 <div class="container">
   <h1>Specialties</h1>
     <div class="transition-panel">
@@ -37,6 +38,7 @@ by going through the example folder for a working demonstration of the plugin in
       </div>
     </div>
   </div>
+</code></pre>
 
 ## JavaScript Code
 TransitionPanelPlugin.init().start();
@@ -52,6 +54,7 @@ the viewing of the templates in your html.
 
 # Transition With Code
 ## JavaScript
+<pre><code>
 $(document).ready(function(){
   TransitionPanelPlugin.init().start();
 
@@ -75,3 +78,4 @@ $(document).ready(function(){
     }
   }, 5000);
 });
+</code></pre>
