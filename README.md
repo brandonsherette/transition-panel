@@ -7,8 +7,13 @@ You can go through the example folder for a working demonstration of the plugin 
 # Dependencies
 * jQuery
 
-# Nav Example
+# Bower
+```
+npm install bower -g
+bower install https://github.com/brandonsherette/transition-panel.git
+```
 
+# Nav Example
 ## Html
 ```html
 <div class="container">
@@ -39,19 +44,31 @@ You can go through the example folder for a working demonstration of the plugin 
 ```
 
 ## JavaScript Code
-TransitionPanelPlugin.init().start();
+```javascript
+$(document).ready(function() {
+  TransitionPanelPlugin.init().start();
+});
+```
 
-init() will go through your html code and setup the plugin.
+### Descriptions
+*TransitionPanelPlugin.init()* 
+will go through your html code and setup the plugin.
 
-start() will load and display the first template.
+*start()* 
+will load and display the first template.
 
 ## Styles
 The Transition Panel Plugin includes a css file that you should add which will disable 
 the viewing of the templates in your html.
 
+```html
+<link rel="stylesheet" href="bower_components/transition-panel/dist/styles/default.css">
+```
+
 
 # Transition With Code
 ## JavaScript
+```javascript
 <pre><code>
 $(document).ready(function(){
   TransitionPanelPlugin.init().start();
@@ -77,3 +94,4 @@ $(document).ready(function(){
   }, 5000);
 });
 </code></pre>
+```
