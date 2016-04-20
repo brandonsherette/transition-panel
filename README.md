@@ -72,7 +72,6 @@ the viewing of the templates in your html.
 # Transition With Code
 ## JavaScript
 ```javascript
-<pre><code>
 $(document).ready(function(){
   TransitionPanelPlugin.init().start();
 
@@ -96,5 +95,4 @@ $(document).ready(function(){
     }
   }, 5000);
 });
-</code></pre>
 ```
