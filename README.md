@@ -4,6 +4,9 @@ main view by either through a button (nav) click or through JavaScript code.
 
 You can go through the example folder for a working demonstration of the plugin in various scenarios.
 
+#Current Version
+v1.0.5
+
 # Dependencies
 * jQuery
 
